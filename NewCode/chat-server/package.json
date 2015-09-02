@@ -1,0 +1,18 @@
+{
+    "name": "chat-server",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "dependencies": {
+        "bluebird": "2.3.4",
+        "lodash": "2.4.1",
+        "log4js": "0.6.22",
+        "moment": "2.7.0",
+        "socket.io":"*"
+    },
+    "devDependencies": {
+
+    }
+}

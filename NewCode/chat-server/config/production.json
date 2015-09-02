@@ -1,0 +1,32 @@
+{
+    "app": {
+        "port": 8880,
+        "invRepeatInterval":1000,
+        "invTimeOut":300000,
+        "chatLogInterval":60000,
+        "updateUsersInterval":600000,
+        "dbgCurrentStatusInterval":3600000,
+        "roomDelimiter":"_",
+        "roomPrefix":"/"
+
+    },
+    "webSite":{
+        "host": "myfreeimplants.com",
+        "port": 80,
+        "friendListHandler":"/PageMethods.aspx/FriendsList",
+        "userCanChatHandler":"/PageMethods.aspx/UserCanChat",
+        "chatLogsHandler":"/PageMethods.aspx/SaveLogs",
+        "updateUsersOnlineHandler":"/PageMethods.aspx/UpdateUsersOnline"
+    },
+    "logging": {
+        "appenders": [
+            {
+                "type": "dateFile",
+                "filename": "logs/chat-server",
+                "pattern": "-yyyy-MM-dd",
+                "alwaysIncludePattern": false
+            }
+        ],
+        "level": "DEBUG"
+    }
+}
